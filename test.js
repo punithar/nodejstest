@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));
 app.get('/Campus', function (req, res) {
     var queryString = "select CampusId,CampusName,CollegeTypeId,CampusAddress,Latitude,Longitude,Accuracy from Campus";
-    // lakshman
+    // sravanthi
     console.log(queryString);
     db.query(queryString, function (err, recordset) {
         if (err) {
